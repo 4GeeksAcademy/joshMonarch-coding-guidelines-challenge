@@ -1,19 +1,14 @@
-let result = 0;
-
 function add(x, y) {
-  result = x + y;
+  return x + y;
 }
 
 function subtract(x, y) {
-  result = x - y;
+  return x - y;
 }
 
-function accumulate(x) {
-    result += x;
-}
-
-add(5, 10);
-console.log(result);
-accumulate(6);
-subtract(6, 12);
-console.log(result);
+let sumResult = add(5, 10);
+console.log(sumResult);
+let accumulator = add(sumResult, 10); // Accumulator
+console.log(accumulator);
+let subResult = subtract(6, 12);
+console.log(subResult);
